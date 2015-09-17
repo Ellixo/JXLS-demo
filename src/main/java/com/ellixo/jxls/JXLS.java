@@ -39,7 +39,7 @@ public class JXLS {
         AreaBuilder areaBuilder = new XlsCommentAreaBuilder();
 
         try (InputStream is = JXLS.class.getClassLoader().getResourceAsStream("./BDM.xls")) {
-            try (OutputStream os = new FileOutputStream("/Users/Greg/Projects/Yarg/src/main/resources/BDM_result.xls")) {
+            try (OutputStream os = new FileOutputStream("./BDM_result.xls")) {
                 Context context = new Context();
                 context.putVar("medicaments", medicaments);
 
